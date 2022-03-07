@@ -22,7 +22,7 @@ while game_is_on:
         '#Detect if Level is Passed'
         if player.ycor() > 280:
             player.reset_game()
-            MOVE_INCREMENT *= 0.5
+            MOVE_INCREMENT *= 0.8
             scoreboard.level_up()
         '#Detect Collision with Car'
         if player.distance(car) < 20:
